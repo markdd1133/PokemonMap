@@ -118,7 +118,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     @IBAction func center(_ sender: Any) {
         if let coord = manager.location?.coordinate{
         let region = MKCoordinateRegionMakeWithDistance(coord, 200, 200)
-        mapView.setRegion(region, animated: true)
+        mapView.setRegion(region, animated: false)
         }
     }
     
