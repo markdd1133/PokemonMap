@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5A2D40A1ED203EE006DC3E0 /* pokemon_go_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A2D4091ED203EE006DC3E0 /* pokemon_go_logo.png */; };
+		F5A2D40C1ED20402006DC3E0 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5A2D40B1ED20402006DC3E0 /* bg.jpg */; };
 		F5F2E5131EC3309600671C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2E5121EC3309600671C38 /* AppDelegate.swift */; };
 		F5F2E5151EC3309600671C38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2E5141EC3309600671C38 /* ViewController.swift */; };
 		F5F2E5181EC3309600671C38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F2E5161EC3309600671C38 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5A2D4091ED203EE006DC3E0 /* pokemon_go_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokemon_go_logo.png; sourceTree = "<group>"; };
+		F5A2D40B1ED20402006DC3E0 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		F5F2E50F1EC3309600671C38 /* PokemonMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F2E5121EC3309600671C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5F2E5141EC3309600671C38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				F5F2E51E1EC3309600671C38 /* LaunchScreen.storyboard */,
 				F5F2E5211EC3309600671C38 /* Info.plist */,
 				F5F2E5191EC3309600671C38 /* PokemonMap.xcdatamodeld */,
+				F5A2D4091ED203EE006DC3E0 /* pokemon_go_logo.png */,
+				F5A2D40B1ED20402006DC3E0 /* bg.jpg */,
 			);
 			path = PokemonMap;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A2D40C1ED20402006DC3E0 /* bg.jpg in Resources */,
+				F5A2D40A1ED203EE006DC3E0 /* pokemon_go_logo.png in Resources */,
 				F5F2E5201EC3309600671C38 /* LaunchScreen.storyboard in Resources */,
 				F5F2E51D1EC3309600671C38 /* Assets.xcassets in Resources */,
 				F5F2E5181EC3309600671C38 /* Main.storyboard in Resources */,
@@ -544,6 +552,7 @@
 				F5F2E53C1EC3309600671C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5F2E53D1EC3309600671C38 /* Build configuration list for PBXNativeTarget "PokemonMapTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +561,7 @@
 				F5F2E53F1EC3309600671C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5F2E5401EC3309600671C38 /* Build configuration list for PBXNativeTarget "PokemonMapUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +570,7 @@
 				F5F2E5421EC3309600671C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

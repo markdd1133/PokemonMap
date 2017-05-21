@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +20,35 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qmE-8e-wLP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon_go_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gdR-Jz-DOC">
+                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="rc5-Gf-VMC"/>
+                                    <constraint firstAttribute="width" constant="200" id="tmd-ov-XIE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017 PokemonMap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn8-x9-SEP">
+                                <rect key="frame" x="118" y="613.5" width="139" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gdR-Jz-DOC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CAB-n8-nml"/>
+                            <constraint firstItem="qmE-8e-wLP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="EAL-p6-0VB"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="qmE-8e-wLP" secondAttribute="bottom" id="Jfr-Wf-jdj"/>
+                            <constraint firstItem="Fn8-x9-SEP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="L0d-Na-3hZ"/>
+                            <constraint firstItem="gdR-Jz-DOC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ta4-7V-42I"/>
+                            <constraint firstItem="qmE-8e-wLP" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="dBy-A6-rKq"/>
+                            <constraint firstItem="Fn8-x9-SEP" firstAttribute="top" secondItem="gdR-Jz-DOC" secondAttribute="bottom" constant="180" id="nQI-tY-0nI"/>
+                            <constraint firstAttribute="trailing" secondItem="qmE-8e-wLP" secondAttribute="trailing" id="oZi-T8-pl9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +56,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg.jpg" width="1920" height="1200"/>
+        <image name="pokemon_go_logo.png" width="608" height="370"/>
+    </resources>
 </document>
